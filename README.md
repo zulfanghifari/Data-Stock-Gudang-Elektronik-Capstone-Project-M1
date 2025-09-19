@@ -1,25 +1,68 @@
-# Data-Stock-Gudang-Elektronik-Capstone-Project-M1
-Hello! My name is Muhammad Zulfan Alghifari.  This is my first Capstone Project as Student at Purwadhika Digital Technology School, built using Python in Visual Studio Code.
+# Sistem Stok Gudang Elektronik (Python)
 
+Program ini dibuat untuk memudahkan admin gudang elektronik dalam melakukan pendataan stok barang.  
+Admin dapat:
+- Melihat jumlah stok barang yang tersedia.
+- Menambahkan produk baru ke gudang.
+- Mengubah stok produk yang sudah ada.
+- Menghapus produk.
+- Mencatat transaksi barang masuk dan barang keluar sehingga data selalu ter-update.
 
+##  Teknologi yang Digunakan
+- **Python 3**
 
-# Overview Project 
-Project ini dibuat dengan tujuan memudahkan admin gudang elektronik untuk melakukan pendataan stok yang ada di gudang tersebut, admin bisa mengetahui jumlah stok yang ada, bisa mengupdate produk yang ada di gudang, menambhakan produk dan jika ada barang masuk atau keluar dari gudang bisa mengupdate data nya sehingga data yang ada selalu terupdate. 
-# Fitur Utama (Ketika program dijalankan pertama kali akan menampilkan menu utama)
-1. Tampilkan Semua Stok
-   program akan menampilkan semua stok yang ada di Gudang berdasarkan data dummy yang sudah dibuat diawal
-2. Tambah Produk Baru
-   Pada menu ini kita bisa memasukkan produk baru namun dengan catatan jumlah stok yang ingin diinput harus berupa angka bilangan bulat 
-3. Ubah Stok Produk
-   Pada menu ini kita bisa mengupdate atau mengubah stock, namun dengan catatan jumlah stok yang ingin diinput harus berupa angka bilangan bulat dan harus sesuai dengan data yang ada
-4. Hapus Produk
-   Pada menu ini kita bisa menghapus produk yang ada di gudang, namun input harus sesuai dengan data yang ad ajika tidak maka akan menuruh mengisi ulang 
-5. Transaksi Masuk Barang
-    Pada menu ini kita bisa menambahkan produk yang masuk dengan catatan produk tersebut sudah ada di database kit ajika tidak, maka user harus memasukkan input yang sesuai
-6. Transaksi Keluar Barang
-    Pada menu ini kita bisa menambahkan produk yang keluar dengan catatan produk tersebut sudah ada di database kit ajika tidak, maka user harus memasukkan input yang sesuai
-7. Keluar
-    Program selesai 
+##  Cara Menjalankan Program
+1. Pastikan Python 3 terpasang di komputer.
+2. Install library `tabulate`:
+   ```bash
+   pip install tabulate
+   ```
+   atau gunakan:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Jalankan program:
+   ```bash
+   python CapstoneProject-M1-MuhammadZulfanAlghifari.py
+   ```
 
-# Author 
-Muhammad Zulfan Alghifari 
+##  Fitur Utama
+Ketika program dijalankan, akan muncul menu utama dengan fitur berikut:
+
+1. **Tampilkan Semua Stok**  
+   Menampilkan seluruh stok barang berdasarkan data awal.
+
+2. **Tambah Produk Baru**  
+   Menambahkan produk baru (input jumlah harus angka bulat).
+
+3. **Ubah Stok Produk**  
+   Mengubah stok produk yang ada (input angka bulat sesuai data).
+
+4. **Hapus Produk**  
+   Menghapus produk dari gudang (input sesuai data, jika tidak program meminta input ulang).
+
+5. **Transaksi Masuk Barang**  
+   Menambahkan stok produk yang sudah ada di database (input sesuai produk).
+
+6. **Transaksi Keluar Barang**  
+   Mengurangi stok produk yang sudah ada (stok dicek agar mencukupi).
+
+7. **Keluar**  
+   Mengakhiri program.
+
+##  Struktur Folder
+```
+/project-folder
+│
+├─ CapstoneProject-M1-MuhammadZulfanAlghifari.py
+├─ README.md
+├─ requirements.txt
+├─ .gitignore
+└─ images/         # opsional untuk screenshot/flowchart
+```
+
+##  Catatan
+- Pastikan input jumlah berupa angka bulat.
+
+## 👤 Author
+Muhammad Zulfan Alghifari
